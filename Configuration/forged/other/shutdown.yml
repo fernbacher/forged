@@ -1,0 +1,20 @@
+---
+title: Decrease Shutdown Time
+description: Gets rid of the blue screen which hangs waiting for "work"
+privilege: TrustedInstaller
+actions:
+  - !registryValue:
+    path: 'HKCU\Control Panel\Desktop'
+    value: 'HungAppTimeout'
+    data: '2000'
+    type: REG_SZ
+  - !registryValue:
+    path: 'HKCU\Control Panel\Desktop'
+    value: 'WaitToKillAppTimeOut'
+    data: '2000'
+    type: REG_SZ
+  - !registryValue:
+    path: 'HKLM\SYSTEM\CurrentControlSet\Control'
+    value: 'WaitToKillServiceTimeout'
+    data: '2000'
+    type: REG_SZ

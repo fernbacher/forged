@@ -1,0 +1,12 @@
+---
+title: Forged
+description: Forged configuration
+privilege: Admin
+actions: []
+features:
+  - forged\start.yml
+  - forged\software.yml
+  - forged\components.yml
+  - forged\packages.yml
+  - forged\runs.yml
+  - forged\config.yml

@@ -1,0 +1,61 @@
+---
+title: Runs
+description: running the scripts
+privilege: TrustedInstaller
+actions: 
+  - !writeStatus: {status: "Tweaking"}
+features:
+    # ===================
+    # === Performance ===
+    # ===================
+  - forged\performance\isolation.yml
+  - forged\performance\kernel.yml
+  - forged\performance\scheduled-tasks.yml
+  - forged\performance\separation.yml
+  - forged\performance\services.yml
+  - forged\performance\superfetch.yml
+  - forged\performance\maintenance.yml
+  - forged\performance\power-control.yml
+  - forged\performance\security.yml
+  - forged\performance\updates.yml
+
+    # ============================
+    # === Privacy and Security ===
+    # ============================
+  - forged\privacy\config.yml
+
+    # =============
+    # === Other ===
+    # =============
+  - forged\other\about.yml
+  - forged\other\audio-communications.yml
+  - forged\other\bypass11.yml
+  - forged\other\content-delivery.yml
+  - forged\other\crash-control.yml
+  - forged\other\explorer.yml
+  - forged\other\fixes.yml
+  - forged\other\ie.yml
+  - forged\other\ifeo.yml
+  - forged\other\logging.yml
+  - forged\other\mouse.yml
+  - forged\other\msi-installer.yml
+  - forged\other\multimedia.yml
+  - forged\other\ntlite-revi.yml
+  - forged\other\oem.yml
+  - forged\other\old-rightclick.yml
+  - forged\other\oobe.yml
+  - forged\other\search-cortana.yml
+  - forged\other\shutdown.yml
+  - forged\other\startup.yml
+  - forged\other\startmenu.yml
+  - forged\other\static.yml
+  - forged\other\stop-uwp.yml
+  - forged\other\store.yml
+  - forged\other\sysrestoreconfig.yml
+  - forged\other\take-ownership.yml
+  - forged\other\teams.yml
+  - forged\other\uac.yml
+  - forged\other\diskchecking.yml
+  - forged\other\defrag.yml
+  - forged\other\eoa.yml
+  - forged\other\winsettings.yml

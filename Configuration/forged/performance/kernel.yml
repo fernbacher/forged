@@ -1,0 +1,7 @@
+---
+title: configure-kernel
+description: configure-kernel
+privilege: TrustedInstaller
+actions:
+
+  - !registryValue: {path: 'HKLM\SYSTEM\ControlSet001\Control\Session Manager\Kernel', value: 'DisableTsx', type: REG_DWORD, data: '0'}

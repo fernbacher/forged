@@ -1,0 +1,7 @@
+---
+title: aaa-edit-ISO-version-and-edition
+description: aaa-edit-ISO-version-and-edition
+privilege: TrustedInstaller
+actions:
+
+  - !registryValue: {path: 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion', value: 'EditionSubVersion', type: REG_SZ, data: 'Forged'}
