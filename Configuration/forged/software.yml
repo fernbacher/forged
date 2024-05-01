@@ -20,9 +20,6 @@ actions:
         Start-Process -FilePath $file -ArgumentList $args -Wait -WindowStyle Hidden
         }
         Add-AppPackage 'https://cdn.winget.microsoft.com/cache/source.msix' -ForceApplicationShutdown
-        
-  - !writeStatus: {status: 'Disabling Windows Defender'}
-  - !run: {path: "%ProgramFiles(x86)%\\Revision Tool\\data\\flutter_assets\\additionals", exe: "DisableWD.bat", wait: true, weight: 100}
 
   - !writeStatus: {status: 'Installing Vivaldi', option: "browser-vivaldi"}
   - !cmd:
